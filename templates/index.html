@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarization</title>
+<style>
+    body { background-image: url("https://images.unsplash.com/photo-1546085020-407431a34851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=858&q=80"); background-size: 1366px 768px;}
+
+    #content{
+        text-align: center;
+        padding: 100px 0;
+        font-size: 200%;
+    }
+    
+    .textbox {width: 1000px; height: 30px}
+    .submit {width: 200px; height: 50px}
+    input[type=submit]:hover {
+    padding:5px 15px; 
+    background:#e3e3e3; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+</style> 
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align:center; padding: 50px 0px; font-size:400%; color:rgba(3, 15, 27, 0.589); background-color: #e3e3e3; padding-top: 10px; padding-bottom: 10px;"> News Summarizer</h1>
+    </div> 
+    <div id="content">
+        <form method="POST">
+            <input type="text" class="textbox" name="url" id="url" placeholder="Enter Url">
+            <br><br>
+            <input style="font-size:25px" type="submit" class="submit" name="submit" id="submit" value="Summarize"> 
+        </form>
+    </div>    
+</body>
+</html>
